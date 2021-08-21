@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 const mongoose = require("mongoose");
 const express = require("express");
 const path = require("path");
+const router = require("./routes/book");
 
 const app = express();
 
@@ -19,6 +20,7 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use("/books", router);
 
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("frontend/build"));
@@ -28,6 +30,6 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => console.log(`Server running at port ${port}`));
+app.listen(process.env.PORT, () =>
+	console.log(`Server running at port ${process.env.PORT}`)
+);
