@@ -1,15 +1,12 @@
 import "./App.css";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-import Home from "./Pages/Home";
-import AppNavbar from "./Components/AppNavbar";
+import Main from "./Card Component/main";
 
 function App() {
 	return (
 		<React.Fragment>
-			<AppNavbar />
-			<Home />
+			<Main />
 		</React.Fragment>
 	);
 }

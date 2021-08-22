@@ -1,0 +1,139 @@
+[{
+    "img": "/Image/img1.jpg",
+    "title": "TULUM, RIVIERA MAYA",
+    "data": "Si omnis exercitation, or minim eos laboris nor ut. Tempor veritatis or eiusmod quam occaecat.",
+    "id": 1,
+    "price": "$123",
+    "card": [{
+        "item": "7 days"
+      },
+      {
+        "item": "Up to 20 peoples"
+      },
+      {
+        "item": "4 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  },
+  {
+    "img": "/Image/img2.jpg",
+    "title": "NAVAGIO BEACH, ZAKYNTHOS",
+    "data": " Ipsam voluptate and eum . Sequi corporis.Lorem eius nor quis yet minim but irure yet magna esse.",
+    "id": 2,
+    "price": "$323",
+    "card": [{
+        "item": "5 days"
+      },
+      {
+        "item": "Up to 10 peoples"
+      },
+      {
+        "item": "2 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  },
+  {
+    "img": "/Image/img3.jpg",
+    "title": "GRACE BAY",
+    "data": " Aliquid magni yet aliquid explicabo. Magnam quasi. Exercitationem exercitationem qui aliqua.  ",
+    "id": 3,
+    "price": "$223",
+    "card": [{
+        "item": "25 days"
+      },
+      {
+        "item": "Up to 20 peoples"
+      },
+      {
+        "item": "5 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  },
+  {
+    "img": "/Image/img4.jpg",
+    "title": "WHITEHAVEN BEACH",
+    "data": "Anim architecto for nostrud excepteur quo but quis, for qui. Id molestiae consequuntur for fugiat so tempora cillum. ",
+    "id": 4,
+    "price": "$303",
+    "card": [{
+        "item": "5 days"
+      },
+      {
+        "item": "Up to 10 peoples"
+      },
+      {
+        "item": "2 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  },
+  {
+    "img": "/Image/img5.jpg",
+    "title": "BAIA DO SANCHO",
+    "data": "When in doubt, wash lick master's hand at first then bite because im moody if it smells like fish eat as much as you wish ",
+    "id": 5,
+    "price": "$423",
+    "card": [{
+        "item": "15 days"
+      },
+      {
+        "item": "Up to 15 peoples"
+      },
+      {
+        "item": "5 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  },
+  {
+    "img": "/Image/img6.jpg",
+    "title": "TULUM, RIVIERA MAYA",
+    "data": "Sit nisi aliquam and dicta nisi but commodi. Ipsam voluptate and eum so fugiat. Amet. Inventore accusantium. Sequi corporis.",
+    "id": 6,
+    "price": "$223",
+    "card": [{
+        "item": "7 days"
+      },
+      {
+        "item": "Up to 20 peoples"
+      },
+      {
+        "item": "4 tour guides"
+      },
+      {
+        "item": "Sleep in private tents"
+      },
+      {
+        "item": "Difficulty medium"
+      }
+    ]
+  }
+]
