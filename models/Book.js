@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
 
 const bookSchema = new mongoose.Schema({
-	title: {
+	name: {
 		type: String,
 		required: true,
 	},
-	pageCount: {
-		type: Number,
-		required: true,
-	},
-	description: {
-		type: String,
-		required: true,
-	},
+	// pageCount: {
+	// 	type: Number,
+	// 	required: true,
+	// },
+	// description: {
+	// 	type: String,
+	// 	required: true,
+	// },
 	createdAt: {
 		type: Date,
 		required: true,

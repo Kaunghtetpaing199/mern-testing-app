@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 
 router.post("/new", async (req, res) => {
 	const book = new Book({
-		title: req.body.title,
+		name: req.body.name,
 		pageCount: req.body.pageCount,
 		description: req.body.description,
 	});
@@ -22,6 +22,19 @@ router.post("/new", async (req, res) => {
 		res.redirect("/books");
 	} catch (err) {
 		res.json({ message: err.message });
+	}
+});
+
+router.delete("/:id", async (req, res) => {
+	const book = await Book.findById(req.params.id);
+
+	try {
+		book
+			.remove()
+			.then(() => res.json({ success: true }))
+			.catch((err) => res.status(404).json({ error: err.message }));
+	} catch (err) {
+		res.status(404).json({ error: err.message });
 	}
 });
 
