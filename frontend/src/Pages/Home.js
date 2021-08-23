@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Home = (props) => {
+	const [data, setData] = useState([]);
+	useEffect(() => {
+		axios.get("/books").then((res) => {
+			setData(res.data);
+		});
+	}, [data]);
 	return (
 		<React.Fragment>
 			<h1>Home Page</h1>
-
-			<form>
-				<input placeholder='Book Name' type='text' />
-				<tr />
-				<input placeholder='Page Count' type='number' />
-				<tr />
-				<textarea placeholder='Massage' />
-				<tr />
-				<button type='submit'> Submit</button>
-			</form>
+			{data.map((item, index) => (
+				<div key={index}>
+					<p>{item.name}</p>
+				</div>
+			))}
 		</React.Fragment>
 	);
 };

@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "node server.js",
-		"heroku-postbuild": "cd frontend && npm install && npm run build",
-		"devStart": "nodemon server.js"
+		"devStart": "nodemon server.js",
+		"heroku-postbuild": "cd frontend && npm install && npm run build"
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
