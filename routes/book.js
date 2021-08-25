@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
 router.post("/new", async (req, res) => {
 	const book = new Book({
 		name: req.body.name,
-		pageCount: req.body.pageCount,
+		// pageCount: req.body.pageCount,
 		description: req.body.description,
 	});
 	try {

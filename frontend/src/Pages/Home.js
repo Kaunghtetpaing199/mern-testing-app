@@ -13,7 +13,8 @@ const Home = (props) => {
 			<h1>Home Page</h1>
 			{data.map((item, index) => (
 				<div key={index}>
-					<p>{item.name}</p>
+					<h3>{item.name}</h3>
+					<p>{item.description}</p>
 				</div>
 			))}
 		</React.Fragment>
