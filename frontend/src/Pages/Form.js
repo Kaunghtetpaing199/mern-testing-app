@@ -1,17 +1,32 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Redirect } from "react-router";
+import { Redirect, useParams } from "react-router";
 
-const Form = () => {
-	const [name, setName] = useState("");
+const Form = (props) => {
+	const [name, setName] = useState(props.data !== [] ? props.data.name : "");
 	const [description, setDescription] = useState("");
 	const [isSucced, setSuccess] = useState(false);
+	let { slug } = useParams();
+
 	const submit = (e) => {
 		e.preventDefault();
-		axios
-			.post("/books/new", { name, description })
-			.then((res) => setSuccess(true))
-			.catch(() => alert("Failed uploading data"));
+		if (props.type === "create") {
+			axios
+				.post("/books/new", { name, description })
+				.then((res) => setSuccess(true))
+				.catch(() => alert("Failed uploading data"));
+		}
+		if (props.type === "update") {
+			axios
+				.patch(`/books/${slug}`, { name, description })
+				.then((res) => {
+					setSuccess(true);
+				})
+				.catch((err) => console.log(err.message));
+		}
+
+		setName("");
+		setDescription("");
 	};
 	return (
 		<React.Fragment>
